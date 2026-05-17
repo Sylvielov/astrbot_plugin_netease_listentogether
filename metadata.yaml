@@ -1,0 +1,8 @@
+name: astrbot_plugin_netease_listentogether
+desc: 网易云音乐「一起听」链接提取插件 —— 实时监控群聊消息，自动检测并提取网易云音乐一起听邀请链接，支持自定义触发词、监听群聊、链接匹配规则。
+short_desc: 自动提取群聊中网易云音乐「一起听」邀请链接，支持触发词发送。
+author: astrbot
+version: 1.1.0
+support_platforms:
+  - aiocqhttp
+astrbot_version: ">=4.16,<5"

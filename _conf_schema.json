@@ -1,0 +1,61 @@
+{
+  "enable_monitoring": {
+    "type": "bool",
+    "description": "启用插件监听",
+    "hint": "关闭后将不再监听群聊消息及提取链接",
+    "default": true
+  },
+  "monitored_groups": {
+    "type": "text",
+    "description": "监听的群聊ID列表",
+    "hint": "多个群号用英文逗号分隔，例如：123456,789012。留空则监听所有群聊。",
+    "placeholder": "123456,789012",
+    "default": ""
+  },
+  "trigger_keywords": {
+    "type": "text",
+    "description": "触发关键词列表",
+    "hint": "多个关键词用英文逗号分隔，例如：一起听,一起来听,listen together。消息中包含任意关键词时触发链接提取。留空则对所有消息进行链接检测。",
+    "placeholder": "一起听,一起来听,listen together",
+    "default": "一起听,一起来听,listen together,一起聽"
+  },
+  "prefix_text": {
+    "type": "text",
+    "description": "自定义前缀内容",
+    "hint": "触发词匹配后，在发送内容最前面添加的自定义文本。支持变量：{time}（存储时间：YYYY-MM-DD HH:MM:SS），{time_diff}（动态时间差：如3小时前、2天前等）。留空则不添加前缀。",
+    "placeholder": "快来一起听吧！{time_diff}",
+    "default": ""
+  },
+  "suffix_text": {
+    "type": "text",
+    "description": "自定义后缀内容",
+    "hint": "触发词匹配后，在发送内容最后面添加的自定义文本。支持变量：{time}（存储时间：YYYY-MM-DD HH:MM:SS），{time_diff}（动态时间差：如3小时前、2天前等）。留空则不添加后缀。",
+    "placeholder": "—— 存储时间：{time_diff}",
+    "default": ""
+  },
+  "send_format": {
+    "type": "string",
+    "description": "发送格式",
+    "hint": "触发词匹配后发送的格式：link=纯文本链接，card=原始JSON卡片，both=链接+卡片",
+    "options": ["link", "card", "both"],
+    "default": "link"
+  },
+  "link_pattern": {
+    "type": "text",
+    "description": "网易云链接正则表达式",
+    "hint": "用于匹配网易云音乐链接的正则表达式。默认已覆盖 st.music.163.com（一起听）、music.163.com、163cn.tv、y.music.163.com 域名。",
+    "placeholder": "https?://(?:st\\.music\\.163\\.com|music\\.163\\.com|163cn\\.tv|y\\.music\\.163\\.com)[^\\s>)\\]}\\\"\\'`]*",
+    "default": "https?://(?:st\\.music\\.163\\.com|music\\.163\\.com|163cn\\.tv|y\\.music\\.163\\.com)[^\\s>)\\]}\\\"\\'`]*",
+    "editor_mode": true,
+    "editor_language": "plaintext"
+  },
+  "reply_template": {
+    "type": "text",
+    "description": "链接回复模板",
+    "hint": "支持变量：{links} 为提取到的链接，{sender_name} 为发送者昵称，{time} 为存储时间（YYYY-MM-DD HH:MM:SS），{time_diff} 为动态时间差（如3小时前、2天前等）。",
+    "placeholder": "网易云音乐「一起听」邀请链接：\n{links}\n—— 来自 {sender_name} 的分享\n—— {time_diff}",
+    "default": "网易云音乐「一起听」邀请链接：\n{links}\n—— 来自 {sender_name} 的分享",
+    "editor_mode": true,
+    "editor_language": "plaintext"
+  }
+}
