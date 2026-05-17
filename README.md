@@ -1,0 +1,2 @@
+# astrbot_plugin_netease_listentogether
+网易云音乐一起听群内提醒插件
