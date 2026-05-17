@@ -77,7 +77,3 @@ git clone https://github.com/Sylvielov/astrbot_plugin_netease_listentogether.git
 ## 贡献
 
 欢迎提交 Issue 和 Pull Request！
-=======
-# astrbot_plugin_netease_listentogether
-网易云音乐一起听群内提醒插件
->>>>>>> db297999a15c5843bc0ee76a36c0b7769da63345
