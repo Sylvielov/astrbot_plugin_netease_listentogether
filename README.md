@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 # AstrBot 网易云音乐「一起听」链接提取插件
-
-[![AstrBot](https://img.shields.io/badge/AstrBot-4.16%2B-blue)](https://github.com/AstrBotDevs/AstrBot)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-green)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-MIT-orange)](LICENSE)
-[![Platform](https://img.shields.io/badge/Platform-aiocqhttp-lightgrey)](https://docs.go-cqhttp.org/)
-
 > 实时监控群聊消息，自动提取网易云音乐「一起听」邀请链接，支持触发词发送。
 
 ## 功能特性
@@ -22,7 +15,7 @@
 ## 工作流程
 
 ```
-群内发送「一起听」卡片 → 插件自动存储（不发送）
+群内发送「一起听」卡片 → 插件自动存储
 群内发送触发词（如"一起听"） → 按配置的格式发送存储的内容
 ```
 
@@ -34,7 +27,6 @@
 cd AstrBot/data/plugins
 git clone https://github.com/Sylvielov/astrbot_plugin_netease_listentogether.git
 ```
-
 安装完成后，重启 AstrBot 或在 WebUI 中重载插件。
 
 ### 配置
@@ -86,7 +78,3 @@ git clone https://github.com/Sylvielov/astrbot_plugin_netease_listentogether.git
 ## 贡献
 
 欢迎提交 Issue 和 Pull Request！
-=======
-# astrbot_plugin_netease_listentogether
-网易云音乐一起听群内提醒插件
->>>>>>> db297999a15c5843bc0ee76a36c0b7769da63345
