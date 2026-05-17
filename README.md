@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AstrBot 网易云音乐「一起听」链接提取插件
 
 [![AstrBot](https://img.shields.io/badge/AstrBot-4.16%2B-blue)](https://github.com/AstrBotDevs/AstrBot)
@@ -81,3 +82,7 @@
 ## 贡献
 
 欢迎提交 Issue 和 Pull Request！
+=======
+# astrbot_plugin_netease_listentogether
+网易云音乐一起听群内提醒插件
+>>>>>>> db297999a15c5843bc0ee76a36c0b7769da63345
