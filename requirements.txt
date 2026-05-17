@@ -1,2 +1,0 @@
-# AstrBot Netease ListenTogether Plugin Dependencies
-# Install via: pip install -r requirements.txt

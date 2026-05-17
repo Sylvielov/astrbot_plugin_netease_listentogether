@@ -30,8 +30,12 @@
 
 ### 安装
 
-1. 将 `astrbot_plugin_netease_listentogether` 文件夹放置到 `data/plugins/` 目录下
-2. 重启 AstrBot 或在 WebUI 中重载插件
+```bash
+cd AstrBot/data/plugins
+git clone https://github.com/Sylvielov/astrbot_plugin_netease_listentogether.git
+```
+
+安装完成后，重启 AstrBot 或在 WebUI 中重载插件。
 
 ### 配置
 
